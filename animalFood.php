@@ -2,15 +2,15 @@
 require __DIR__ . "/product.php";
 
 class AnimalFood extends Product{
-    public $type = "Cibo";
-    public $img = "img.jpg";
+    public $foodType = "Cibo";
+    public $foodImg = "img.jpg";
 
     public function returnFoodIcon(){
-        return $this->type;
+        return $this->foodType;
     }
 
     public function returnFoodImg(){
-        return $this->img;
+        return $this->foodImg;
     }
 }
 ?>
