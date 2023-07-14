@@ -15,9 +15,6 @@ $bone-> price("2€");
 $bone-> category("Cane");
 $bone-> image("bone-img.jpg");
 array_push($productArray, $bone);
-
-var_dump($productArray);
-
 ?>
 
 <!DOCTYPE html>
@@ -25,9 +22,31 @@ var_dump($productArray);
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/style.css">
         <title>PHP oop 2</title>
     </head>
     <body>
-        <p>test</p>
+        <div class="container">
+            <div class="box">
+                <?php 
+                    foreach ($productArray as $key => $product){
+                    ?>
+                        <div>
+                            <p><?php echo $key ?></p>
+
+                            <?php
+                            foreach ($product as $key => $info){
+                            ?>
+                                <p><?php echo $info ?></p>
+                            <?php
+                            }
+                            ?>
+                        </div>
+                    <?php
+                    }
+                ?>
+            </div>
+        </div>
     </body>
 </html>

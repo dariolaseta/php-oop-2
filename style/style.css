@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box{
+    margin-top: 3rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.box p{
+    margin: .5rem 0;
+}
